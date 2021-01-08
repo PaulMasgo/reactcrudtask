@@ -1,13 +1,176 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+    text-transform: uppercase;
+    width: 100%;
+    height: 60px;
+    background: rgb(114, 13, 13);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    line-height: 40px;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 60px;
+    background: rgb(230, 230, 230);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    padding: 20px;
+}
+
+.table {
+    width: 50%;
+    height: 50vh;
+    border: 1px solid #000;
+}
+
+.table-header {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    color: #ffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-header .element {
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.table-header .element:nth-child(2n){
+    width:60%;
+}
+
+.table-header .element:nth-child(3n){
+    width:30%;
+}
+
+
+.table-content {
+    width: 100%;
+    height: 40px;
+    background: #FFF;
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.table-content .element {
+    line-height: 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.table-content .element:nth-child(2n){
+    text-align: left;
+    width:60%;
+}
+
+.table-content .element:nth-child(3n){
+    width:30%;
+}
+
+.element .btn-edit {
+    background: rgb(231, 203, 44);
+    padding: 7px;
+    border: none;
+    margin-right: 3px;
+    border-radius: 3px;
+}
+
+
+.element .btn-delete {
+    color: #fff;
+    background: rgb(231, 66, 44);
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+}
+
+.form {
+    width: 45%;
+    text-align: center ;
+}
+
+.form h2{
+    margin-bottom: 20px;
+}
+
+.form input {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    padding: 5px;
+    border:none;
+    border: 1px solid rgb(114, 13, 13);
+    border-radius: 5px;
+}
+
+.form button {
+    margin-top: 15px;
+    width: 80%;
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+
+.form .update-button {
+    margin-bottom: 15px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.form .update-button:hover {
+    width: 80%;
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form span{
+    color: red;
+    font-size: 13px;
 }
